@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Scientific Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <button class="history-btn" onclick="toggleHistory()"></button>
+        <span class="history"></span>
+        <input type="text" id="result" placeholder="0" disabled />
+      </div>
+      <div class="buttons">
+        <button onclick="rad()">Rad</button>
+        <button onclick="deg()">Deg</button>
+        <button onclick="fact()">x!</button>
+        <button class="btn">(</button>
+        <button class="btn">)</button>
+        <button onclick="percent()">%</button>
+        <button class="ac" onclick="result.value=''">AC</button>
+
+        <button onclick="inv()">Inv</button>
+        <button onclick="sin()">sin</button>
+        <button onclick="ln()">ln</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">÷</button>
+
+        <button onclick="pi()">&pi;</button>
+        <button onclick="cos()">cos</button>
+        <button onclick="log()">log</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+
+        <button class="btn">×</button>
+        <button onclick="e()">e</button>
+        <button onclick="tan()">tan</button>
+        <button onclick="sqrt()">√</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+
+        <button class="btn">−</button>
+        <button onclick="ans()">Ans</button>
+        <button onclick="exp()">EXP</button>
+        <button onclick="pow()">x<sup>2</sup></button>
+        <button class="btn">0</button>
+        <button class="btn">.</button>
+        <button class="equals" onclick="result.value=eval(result.value)">
+          =
+        </button>
+        <button class="btn">+</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
